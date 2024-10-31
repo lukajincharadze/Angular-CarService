@@ -1,0 +1,54 @@
+<footer class="footer">
+  <div class="footer-topDiv">
+    <div class="footer-topDiv-left">
+      <app-signify-logo></app-signify-logo>
+      <div class="footer-topDiv-left-A">
+        <a href="https://www.facebook.com/">
+          <app-footerlogo-1></app-footerlogo-1>
+        </a>
+        <a href="https://www.youtube.com/">
+          <app-footerlogo-2></app-footerlogo-2>
+        </a>
+        <a href="https://www.linkedin.com/">
+          <app-footerlogo-3></app-footerlogo-3>
+        </a>
+      </div>
+
+      <div class="footer-topDiv-left-lang" (click)="changeText()">
+        <app-glope-svg></app-glope-svg>{{ langs.lang[index] }}
+      </div>
+    </div>
+    <div class="footer-topDiv-right">
+      <ng-container *ngFor="let item of arr">
+        <ul>
+          <app-dynamic-lists
+            [title]="item.title[index]"
+            [text1]="item.list1[index]"
+            [text2]="item.list2[index]"
+            [text3]="
+              'https://mail.google.com/mail/?view=cm&fs=1&to=' +
+              item.list3[index]
+            "
+          ></app-dynamic-lists>
+        </ul>
+      </ng-container>
+    </div>
+  </div>
+  <div class="footer-subDiv">
+    <div class="footer-subDiv-div">
+      <div class="footer-subDiv-div-left">
+        <p class="footer-subDiv-div-left-p">© Archive 2024</p>
+      </div>
+      <!-- <div class="footer-subDiv-div-right">
+        <a (click)="toggleFooterDialogPopup()">{{
+          langs.footerDesc1[index]
+        }}</a>
+        <a href="#">{{ langs.footerDesc2[index] }}</a>
+      </div> -->
+    </div>
+  </div>
+</footer>
+
+<!-- <ng-container *ngIf="dialogPopup">
+  <app-footer-dialog></app-footer-dialog>
+</ng-container> -->

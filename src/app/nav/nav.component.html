@@ -1,0 +1,70 @@
+<div class="div-header">
+  <div class="sub-1">
+    <div class="sub-1-logo" (click)="gotoSection('header')">
+      <p>DIGITARIUS</p>
+    </div>
+
+    <p class="nav-title" (click)="gotoSection('sec1')">
+      {{ langs.nav1[index] }}
+    </p>
+    <p class="nav-title" (click)="gotoSection('sec2')">
+      {{ langs.nav2[index] }}
+    </p>
+    <p class="nav-title" (click)="gotoSection('sec3')">
+      {{ langs.nav3[index] }}
+    </p>
+    <p class="nav-title" (click)="gotoSection('sec4')">
+      {{ langs.nav4[index] }}
+    </p>
+  </div>
+  <div class="sub-2">
+    <p class="geo BurgerTranslate" style="display: none">
+      <li class="sub-2" (click)="changeText()">
+        <span>{{ text }}</span>
+      </li>
+    </p>
+
+    <ul class="sub-2-ul">
+      <p class="geo">
+        <li (click)="changeText()">
+          <span>{{ text }}</span>
+        </li>
+      </p>
+
+      <div class="try-free-btn" (click)="toggleDialogPopup()">
+        <li>{{ langs.navPackets[index] }}</li>
+      </div>
+    </ul>
+    <ul class="bar" style="display: none" (click)="toggleOverlay()">
+      <div class="bar-div">
+        <img src="../../assets/img/bar.png" alt="img" />
+      </div>
+    </ul>
+  </div>
+</div>
+<div class="menu-overlay" [class.active]="isOverlayActive">
+  <p class="menu-title" (click)="gotoSection('sec1')">
+    {{ langs.nav1[index] }}
+  </p>
+  <p class="menu-title" (click)="gotoSection('sec2')">
+    {{ langs.nav2[index] }}
+  </p>
+  <p class="menu-title" (click)="gotoSection('sec3')">
+    {{ langs.nav3[index] }}
+  </p>
+  <p class="menu-title" (click)="gotoSection('sec4')">
+    {{ langs.nav4[index] }}
+  </p>
+  <ul class="menu-list">
+    <li class="menu-item" (click)="gotoSection('sec2')">
+      {{ langs.navPackets[index] }}
+    </li>
+    <li class="menu-item special">
+      {{ langs.navSignIn[index] }}
+    </li>
+  </ul>
+</div>
+
+<ng-container *ngIf="dialogPopup">
+  <app-header-dialog></app-header-dialog>
+</ng-container>

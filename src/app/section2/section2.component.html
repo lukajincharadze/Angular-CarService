@@ -1,0 +1,51 @@
+<section class="body">
+  <div class="body-container">
+    <h2 class="body-container-title">
+      {{ langs.section2Title[index] }}
+    </h2>
+  </div>
+
+  <div class="body-collapse-div">
+    <div class="body-collapse-div-accordion">
+      <mat-accordion>
+        <ng-container *ngFor="let item of collapseInfo; let i = index">
+          <mat-expansion-panel
+            (opened)="panelOpenState.set(true)"
+            (closed)="panelOpenState.set(false)"
+            (click)="changePic(i)"
+            [expanded]="false"
+            hideToggle="false"
+            class="body-collapse-panel"
+          >
+            <mat-expansion-panel-header
+              class="mat-expansion-panel-header"
+              style="padding: 0"
+            >
+              <mat-panel-title
+                class="body-collapse-panel-title"
+                style="margin: 0"
+              >
+                <div class="body-collapse-panel-title-div">
+                  {{ item.Title[index] }}
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>
+              {{ item.Desc[index] }}
+            </p>
+            <button (click)="toggleDialogPopup()" class="learnMore">
+              {{ item.learnMore[index] }}
+            </button>
+          </mat-expansion-panel>
+        </ng-container>
+      </mat-accordion>
+    </div>
+    <div class="body-collapse-img">
+      <img [src]="collapseInfo[collapseImg].picUrl" alt="collapsePic" />
+    </div>
+  </div>
+</section>
+
+<ng-container *ngIf="dialogPopup">
+  <app-header-dialog [source]="'isPopup'"></app-header-dialog>
+</ng-container>

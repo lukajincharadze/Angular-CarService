@@ -1,0 +1,28 @@
+.title,
+.text {
+  font-family: "BPG Arial", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  .text {
+    color: #94a5bc;
+  }
+}
+
+.title {
+  color: #1c3252;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #94a5bc;
+  text-decoration: none;
+}

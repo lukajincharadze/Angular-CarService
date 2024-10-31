@@ -1,0 +1,41 @@
+<section class="section3">
+  <div class="section3-div">
+    <div class="section3-div-title">
+      <p class="section3-div-title-1">{{ langs.section3Title1[index] }}</p>
+      <p class="section3-div-title-2">{{ langs.section3Title2[index] }}</p>
+      <div class="section3-div-title-logoWraper">
+        <app-section3-logo></app-section3-logo>
+        <div class="section3-div-title-logoWraper-div">
+          <input
+            type="tel"
+            class="section3-div-title-input"
+            [ngClass]="{ incorrect: invalid }"
+            [value]="'+995 '"
+            maxlength="14"
+            (input)="numberFunc($event)"
+          />
+
+          <button
+            class="section3-div-title-logoWraper-button"
+            (click)="request()"
+            [disabled]="disabled"
+            [ngClass]="{ clicked: disabled }"
+          >
+            {{ langs.section3SendBtn[index] }}
+          </button>
+        </div>
+        <div *ngIf="errorShow">
+          <small>
+            {{ langs.section3ErrPhone[index] }}
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="section3-div-img">
+      <img
+        src="../../assets/img/digitariusPhotos/DigitariusControl.png"
+        alt="sec3Img"
+      />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+@import url("../../assets/styles/variables.scss");
+
+.header {
+  &-title {
+    font-family: "BPG Arial", sans-serif;
+    margin-top: 120px;
+    font-size: 50px;
+    color: #213250;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+    }
+  }
+  &-img {
+    margin-top: 50px;
+    .carousel-slide {
+      &-inner {
+        max-width: 1000px;
+        height: 800px;
+        object-fit: cover;
+        margin: 0 auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-desc {
+    font-family: "BPG Arial", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1;
+    margin-bottom: 20px;
+    @media screen and (max-width: 1000px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.contextBox {
+  width: 300px;
+  height: 300px;
+  background-color: teal;
+  margin: 0 auto;
+}
+
+.contextMenu {
+  position: absolute;
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid #000;
+}
+
+.toolTipMenu {
+  position: absolute;
+  padding: 10px;
+  background-color: rgb(199, 255, 192);
+  border: 1px solid #000;
+  width: 180px;
+}
+
+.tooltip-color {
+  background-color: purple;
+  cursor: pointer;
+}

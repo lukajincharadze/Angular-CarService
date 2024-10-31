@@ -1,0 +1,16 @@
+<div class="div-wrapper">
+  <div class="div-wrapper-img">
+    <img [src]="img" alt="img" />
+  </div>
+  <div class="div-wrapper-content">
+    <h1>{{ title }}</h1>
+    <p>{{ text }}</p>
+    <button (click)="toggleDialogPopup()" class="learnMore">
+      {{ langs.learnMore[index] }}
+    </button>
+  </div>
+</div>
+
+<ng-container *ngIf="dialogPopup">
+  <app-header-dialog [source]="'isPopup2'"></app-header-dialog>
+</ng-container>

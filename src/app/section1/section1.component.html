@@ -1,0 +1,15 @@
+<section class="body">
+  <div class="body-container">
+    <h2>
+      {{ langs.section1Title[index] }}
+    </h2>
+    <div class="body-charts">
+      <ng-container *ngFor="let item of statInfo">
+        <app-card-component
+          [title]="item.title[index]"
+          [logo]="item.logo"
+        ></app-card-component>
+      </ng-container>
+    </div>
+  </div>
+</section>

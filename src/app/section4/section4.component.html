@@ -1,0 +1,26 @@
+<section class="section4">
+  <p class="section4-title">{{ langs.section4Title[index] }}</p>
+  <div class="section4-div">
+    <div class="section4-div-wrapper">
+      <ng-container *ngFor="let item of arr; let i = index">
+        <app-button
+          [ngStyle]="{
+            backgroundColor: i == num ? '#2766F6' : '#fff',
+            color: i === num ? '#FFF' : '#1C3252'
+          }"
+          [text]="item[index]"
+          (changeData)="eventHandler($event)"
+          [index]="i"
+          style="border-radius: 3px"
+        ></app-button>
+      </ng-container>
+    </div>
+    <ng-container>
+      <app-dynamic-content
+        [img]="useCaseInfo[num].img"
+        [text]="useCaseInfo[num].text[index]"
+        [title]="useCaseInfo[num].title[index]"
+      ></app-dynamic-content>
+    </ng-container>
+  </div>
+</section>

@@ -1,0 +1,141 @@
+@import url("../../assets/styles/variables.scss");
+
+.body {
+  &-container {
+    &-title {
+      color: #1c3252;
+      font-size: 36px;
+      line-height: normal;
+      text-align: center;
+      font-weight: bold;
+      margin: 40px auto 50px;
+      font-family: "BPG Arial", sans-serif;
+      @media screen and (max-width: 600px) {
+        font-size: 24px;
+      }
+    }
+  }
+  &-collapse-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    &-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &-collapse-panel {
+    max-width: 540px;
+    width: 100%;
+    padding-right: 5px;
+    box-shadow: none !important;
+
+    img {
+      width: 35px;
+    }
+
+    &-title {
+      font-family: "BPG Arial", sans-serif;
+      margin: 0px 0px 0px 10px;
+      font-size: 18px;
+      line-height: normal;
+      font-weight: bold;
+      color: rgb(17, 30, 47);
+      user-select: none;
+
+      &-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    p {
+      font-family: "BPG Arial", sans-serif;
+      font-size: 16px;
+      line-height: normal;
+      color: rgb(28, 50, 82);
+
+      margin-bottom: 30px;
+      margin-left: 10px;
+    }
+
+    .learnMore {
+      font-family: "BPG Arial", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      margin-left: 10px;
+      text-decoration: none;
+      background-color: transparent;
+      color: var(--mainColor);
+      cursor: pointer;
+    }
+
+    border: none;
+    box-shadow: none;
+  }
+  &-collapse-img {
+    max-height: 500px;
+    max-width: 500px;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.mat-expansion-panel-header {
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .body-collapse-div {
+    flex-direction: column;
+    &-accordion {
+      padding: 0 10px;
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+}
+
+.dialog {
+  * {
+    font-family: "BPG Arial", sans-serif;
+  }
+  &-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    font-size: 20px;
+  }
+  &-btnWrapper {
+    display: flex;
+    gap: 10px;
+    &-button {
+      font-family: "BPG Arial", sans-serif;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+::ng-deep .mat-expansion-panel-header {
+  padding: 0;
+
+  &:hover {
+    background-color: transparent !important;
+
+    .body-collapse-panel-title-div {
+      color: var(--mainColor) !important;
+    }
+  }
+}

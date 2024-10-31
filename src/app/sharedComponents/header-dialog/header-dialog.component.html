@@ -1,0 +1,65 @@
+<div class="overlay" *ngIf="dialogPopup">
+  <div class="div">
+    <button class="close-btn" (click)="closeDialogPopup()">&#x2715;</button>
+
+    <div class="div-wraperInfo">
+      <h3>{{ langs.dialogTitle[index] }}</h3>
+      <div class="div-wraperInfo-box">
+        <div class="div-wraperInfo-mail">
+          <label for="name">{{ langs.dialogName[index] }}</label>
+          <input
+            id="name"
+            type="text"
+            [ngClass]="{ incorrect: emptyFields && !userName }"
+            [(ngModel)]="userName"
+          />
+
+          <label for="lastname">{{ langs.dialogLastname[index] }}</label>
+          <input
+            id="lastname"
+            type="text"
+            [ngClass]="{ incorrect: emptyFields && !userLastname }"
+            [(ngModel)]="userLastname"
+          />
+
+          <label for="company">{{ langs.dialogCompany[index] }}</label>
+          <input
+            id="company"
+            type="text"
+            [ngClass]="{ incorrect: emptyFields && !userCompany }"
+            [(ngModel)]="userCompany"
+          />
+
+          <label for="phone">{{ langs.dialogPhoneNum[index] }}</label>
+          <input
+            id="phone"
+            type="tel"
+            [ngClass]="{ incorrect: emptyFields && !userPhoneNum }"
+            [(ngModel)]="userPhoneNum"
+            (input)="validatePhoneNumber($event)"
+            pattern="[0-9]*"
+          />
+
+          <label for="email">{{ langs.dialogMail[index] }}</label>
+          <input
+            id="email"
+            type="text"
+            [ngClass]="{ incorrect: invalidEmail }"
+            [(ngModel)]="userMail"
+          />
+        </div>
+
+        <div *ngIf="emptyFields" class="error-message">
+          {{ langs.dialogHeaderErrMsg[index] }}
+        </div>
+        <div *ngIf="invalidEmail" class="error-message">
+          {{ langs.dialogHeaderErrMsg2[index] }}
+        </div>
+      </div>
+    </div>
+
+    <button class="send-btn" (click)="request()" [disabled]="disabled">
+      {{ langs.dialogBtn2[index] }}
+    </button>
+  </div>
+</div>

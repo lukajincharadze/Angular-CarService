@@ -1,0 +1,19 @@
+<div class="overlay" *ngIf="dialogPopup">
+  <div class="div">
+    <h3>{{ langs.footerDialogTitle[index] }}</h3>
+    <div class="div-wraperInfo">
+      <div class="div-wraperInfo-div">
+        <ng-container *ngFor="let item of footerInfo">
+          <h1>{{ item.title[index] }}</h1>
+          <p>{{ item.desc[index] }}</p>
+        </ng-container>
+      </div>
+    </div>
+    <div class="div-btn">
+      <div></div>
+      <button (click)="closeDialogPopup()">
+        {{ langs.dialogBtn[index] }}
+      </button>
+    </div>
+  </div>
+</div>
