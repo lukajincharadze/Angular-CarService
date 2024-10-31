@@ -15,10 +15,15 @@ import { Subscription } from 'rxjs';
 })
 export class Section4Component {
   arr: any[] = [
-    ['WEB აპლიკაცია', 'WEB Application'],
+    ['როლების და უფლებების მართვა', 'Manage roles and rights'],
     ['AD-სთან ინტეგრაცია', 'Integration with AD'],
-    ['Mobile ინტერფეისი', 'Mobile Interface'],
-    ['მოწყობილობები', 'Devices'],
+    ['გარანტიების აღრიცხვა', 'Accounting for guarantees'],
+    [
+      'საბუღალტრო პროგრამასთან ინტეგრაცია',
+      'Integration with accounting software',
+    ],
+    ['ოსტატების ვიზიტების დაჯავშნა', 'Book visits to the masters'],
+    ['ციფრული პრეისკურანტის შექმნა', 'Creating a digital price list'],
   ];
   useCaseInfo: any[] = [];
   num: number = 0;

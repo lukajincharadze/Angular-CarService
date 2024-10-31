@@ -32,15 +32,15 @@ export class TranslationService {
 
     nav1: ['გამოწვევები', 'Challenges'],
     nav2: ['გადაწყვეტები', 'Solutions'],
-    nav3: ['ტექნოლოგია', 'Technology'],
+    nav3: ['ფუნქციონალი', 'Functionality'],
     nav4: ['კონტაქტი', 'Contact'],
     navSignIn: ['შესვლა', 'Sign In'],
     navPackets: ['მოითხოვე პრეზენტაცია', 'Request a presentation'],
 
     title: ['არქივის მართვის პროგრამა', 'Archive management'],
     titleSub: [
-      'მართე დოკუმეტების არქივი და ლოჯისტიკა ერთი პროგრამით',
-      'Manage the paper archive with a single program',
+      'ავტო-ტექნიკის მოვლის სისტემა',
+      'Auto-technique maintenance system',
     ],
 
     headerBtn1: ['სცადე უფასოდ', 'Try for Free'],
@@ -55,16 +55,13 @@ export class TranslationService {
     ],
 
     section1Title: [
-      'თუ გაქვს ქაღალდის დოკუმენტების არქივი და გაწუხებს',
-      'If you have challenges with',
+      'გამოწვევევბი ავტოსერვისის მართვაში',
+      'Challenges in managing a car service',
     ],
 
     sectionSubTitle1: ['აღწერა', 'Description'],
 
-    section2Title: [
-      'არქივარიუსი დაგეხმარება, რომ',
-      'Archivarius will help you to',
-    ],
+    section2Title: ['რას გთავაზობთ VMS?', 'What does VMS offer?'],
     learnMore: ['გაიგე მეტი', 'Learn More'],
 
     section3Title1: ['დეტალები გაინტერესებს?', 'Any questions?'],
@@ -76,7 +73,7 @@ export class TranslationService {
     ],
     section3SendBtn: ['დამიკავშირდით', 'Contact me'],
 
-    section4Title: ['როგორ მუშაობს?', 'How does it work?'],
+    section4Title: ['ძირითადი ფუნქციონალი', 'Basic Functionality'],
 
     section5Title: [
       'ისტორიები ჩვენი მომხმარებლებისგან',
