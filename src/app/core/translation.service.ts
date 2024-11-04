@@ -32,16 +32,12 @@ export class TranslationService {
 
     nav1: ['გამოწვევები', 'Challenges'],
     nav2: ['გადაწყვეტები', 'Solutions'],
-    nav3: ['ფუნქციონალი', 'Functionality'],
+    nav3: ['ფუნქციონალი', 'Features'],
     nav4: ['კონტაქტი', 'Contact'],
     navSignIn: ['შესვლა', 'Sign In'],
     navPackets: ['მოითხოვე პრეზენტაცია', 'Request a presentation'],
 
-    title: ['არქივის მართვის პროგრამა', 'Archive management'],
-    titleSub: [
-      'ავტო-ტექნიკის მოვლის სისტემა',
-      'Auto-technique maintenance system',
-    ],
+    title: ['ავტო-ტექნიკის მოვლის სისტემა', 'Vehicle Maintenance Software'],
 
     headerBtn1: ['სცადე უფასოდ', 'Try for Free'],
     requestRegistration: ['მოითხოვე რეგისტრაცია', 'Request registration'],
@@ -56,12 +52,12 @@ export class TranslationService {
 
     section1Title: [
       'გამოწვევევბი ავტოსერვისის მართვაში',
-      'Challenges in managing a car service',
+      'Vehicle Maintenance Challenges',
     ],
 
     sectionSubTitle1: ['აღწერა', 'Description'],
 
-    section2Title: ['რას გთავაზობთ VMS?', 'What does VMS offer?'],
+    section2Title: ['რას გთავაზობთ VMS?', 'Why VMS?'],
     learnMore: ['გაიგე მეტი', 'Learn More'],
 
     section3Title1: ['დეტალები გაინტერესებს?', 'Any questions?'],

@@ -15,15 +15,14 @@ import { Subscription } from 'rxjs';
 })
 export class Section4Component {
   arr: any[] = [
-    ['როლების და უფლებების მართვა', 'Manage roles and rights'],
-    ['AD-სთან ინტეგრაცია', 'Integration with AD'],
-    ['გარანტიების აღრიცხვა', 'Accounting for guarantees'],
+    ['AD-სთან ინტეგრაცია', 'Integration with Active Directory'],
+    ['გარანტიების აღრიცხვა', 'Warranty Records'],
     [
       'საბუღალტრო პროგრამასთან ინტეგრაცია',
-      'Integration with accounting software',
+      'Integration with Accounting systems',
     ],
-    ['ოსტატების ვიზიტების დაჯავშნა', 'Book visits to the masters'],
-    ['ციფრული პრეისკურანტის შექმნა', 'Creating a digital price list'],
+    ['ოსტატების ვიზიტების დაჯავშნა', 'Master’s service booking'],
+    ['ციფრული პრეისკურანტის შექმნა', 'Digital Contract and pricelist'],
   ];
   useCaseInfo: any[] = [];
   num: number = 0;

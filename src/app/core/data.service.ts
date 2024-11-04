@@ -37,28 +37,25 @@ export class DataService {
   getStatisticInfo() {
     return [
       {
-        title: ['მომსახურების გაწელილი პროცესი', 'Extended service process'],
+        title: ['მომსახურების გაწელილი პროცესი', 'Over-time service process'],
         logo: '../../assets/img/searchIcon.png',
       },
       {
         title: [
           'ფრაგმენტირებული ინფორმაცია ავტომობილებზე',
-          'Fragmented information about cars',
+          'Fragmented & non-centralized information about vehicles',
         ],
         logo: '../../assets/img/folder.png',
       },
       {
         title: [
           'ოსტატების დროის აღრიცხვის ცდომილებები',
-          'Errors in recording the time of masters',
+          'Inaccuracy in masters’ time recording',
         ],
         logo: '../../assets/img/location.png',
       },
       {
-        title: [
-          'კონტროლის მექანიზმების არარსებობა',
-          'Absence of control mechanisms',
-        ],
+        title: ['კონტროლის მექანიზმების არარსებობა', 'Poor control mechanisms'],
         logo: '../../assets/img/profileIcon.png',
       },
       {
@@ -71,28 +68,28 @@ export class DataService {
       {
         title: [
           'დოკუმენტების არაეფექტური მართვა (ფურცლომანია)',
-          'Inefficient document management (paperwork)',
+          'Inefficient document management - Endless papers',
         ],
         logo: '../../assets/img/managmentIcon.png',
       },
       {
         title: [
           'ცდომილებები მარაგების აღრიცხვაში',
-          'Mistakes in inventory accounting',
+          'Inaccuracy in inventory accounting',
         ],
         logo: '../../assets/img/folder2.png',
       },
       {
         title: [
           'რიგები სერვისის გაწევის პროცესში',
-          'Queues in the process of service delivery',
+          'Endless queues in service',
         ],
         logo: '../../assets/img/chartIcon.png',
       },
       {
         title: [
           'პრეისკურანტებში ფასების მოძიების სირთულეები',
-          'Difficulties in finding prices in pricelists',
+          'Difficulties in finding prices in contracts',
         ],
         logo: '../../assets/img/searchIcon2.png',
       },
@@ -102,19 +99,11 @@ export class DataService {
   useCaseInfo() {
     return [
       {
-        img: '../../assets/img/webapp2.png',
-        title: ['მართვა', 'Manage'],
-        text: [
-          'სისტემაში შესაძლებელია პროგრამის მომხმარებლებისთვის როლების მინიჭება მათი უფლება-მოვალეობების მიხედვით და თითიოეულ როლზე  წინასწარ განსაზღვრული უფლებების მინიჭება.',
-          'In the system, it is possible to assign roles to the users of the program according to their rights and duties and to assign predetermined rights to each role.',
-        ],
-      },
-      {
         img: '../../assets/img/adIntegration.png',
         title: ['ინტეგრაცია', 'Integration'],
         text: [
           'პროგრამის მოხმარებლების ავტორიზაციის პროცესის დაკავშირება შესაძლებელია აქტიურ დირექტორიასთან (AD)',
-          'Application user authentication process can be linked to Active Directory (AD)',
+          'The application’s user authentication process can be integrated with Active Directory (AD).',
         ],
       },
       {
@@ -122,23 +111,23 @@ export class DataService {
         title: ['აღრიცხვა', 'Accounting'],
         text: [
           'პროგრამაში გაციფრულებულია ყველანაირი საგარანტიო პირობა, როგორც შიდა ისე მომწოდებლის განარტიის შემთხვევაში.',
-          "All warranty conditions are digitized in the program, both in case of internal and supplier's warranty.",
+          'All warranty conditions are digitized in the program, covering both internal and supplier warranties.',
         ],
       },
       {
         img: '../../assets/img/devices03.png',
         title: ['ინტეგრაცია', 'Integration'],
         text: [
-          'პროგრამა ინტეგრირდება საბურალტრო და ERP სისტემებთან, რაც იძლევა მონაცემების ლაივ რეჟიმში გაცვლის შესაძლებლობას',
-          'The program integrates with inventory and ERP systems, which provides the opportunity to exchange data in live mode',
+          'პროგრამა ინტეგრირდება საბუღალტრო და ERP სისტემებთან, რაც იძლევა მონაცემების ლაივ რეჟიმში გაცვლის შესაძლებლობას',
+          'The program integrates with accounting and ERP systems, enabling real-time data exchange.',
         ],
       },
       {
         img: '../../assets/img/mobileInterface.png',
         title: ['დაჯავშვნა', 'Book'],
         text: [
-          'პროგრამაში შესაძლებელია ავტოსერვისზე წინასწარ ჩაწერა: ავტო-ტექნიკის როგორც სერვის ცენტრში მიყვანი, ისე ოსტატის ადგილზე მივნილების შემთხვევაში.',
-          'In the program, it is possible to register for a car service in advance: in the case of bringing the vehicle to the service center, or in the case of a business trip to the masters place.',
+          'პროგრამაში შესაძლებელია ავტოსერვისზე წინასწარ ჩაწერა: ავტო-ტექნიკის როგორც სერვის ცენტრში მიყვანის, ისე ოსტატის ადგილზე მივნილების შემთხვევაში.',
+          'The program integrates with inventory and ERP systems, facilitating real-time data exchange.',
         ],
       },
       {
@@ -146,7 +135,7 @@ export class DataService {
         title: ['ციფრული', 'Digital'],
         text: [
           'პროგრამაში გაციფრულებულია ავტოსერვისთან დაკავშირებული ყველანაირი დოკუმენტი: პრეისკურანტი, ავტოსერვისის ხარჯთაღრიცხვა, მიღება-ჩაბარებები და ინვოისები.',
-          'All documents related to car service are digitized in the program: price list, car service cost estimate, receipts and invoices.',
+          'All docs related to car service are digitized in the program, including price lists, estimates, receipts, and invoices.',
         ],
       },
     ];
@@ -155,10 +144,10 @@ export class DataService {
   getCollapseInfo() {
     return [
       {
-        Title: ['ციფრული პრეისკურანტი', 'Digital price list'],
+        Title: ['ციფრული პრეისკურანტი', 'Digital contracts'],
         Desc: [
           'გაციფრულებულია კომპანიებთან სატენდერო ხელშეკრულებები და პრეისკურანტი. მის  მიხედვით აღირიცხება სატენდერო ვადის განმავლობაში სერვისის გაწევისას ნაწილების, შეკეთებისა და სახარჯი მასალების ფასები ',
-          'Tender contracts and price lists with companies have been digitized. According to it, the prices of parts, repairs and consumables during the service provision during the tender period are recorded.',
+          'Contracts and price lists are digitized, allowing easy tracking of prices for parts, repairs, and supplies throughout the service period. This ensures transparency and efficiency during the service process.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo1.svg',
@@ -168,11 +157,11 @@ export class DataService {
       {
         Title: [
           'სრული ინფორმცია ავტომობილების შესახებ',
-          'Complete information about cars',
+          'Complete information about vehicles',
         ],
         Desc: [
           'ლაივ რეჟიმში შეგვიძლია პროგრამულად ვნახოთ რომელი ავტომობილია დასრულებული და რომელი იმყოფება შეკეთების პროცესში. ასევე, მივიღოთ ინფორმაცია ასანაზღაურებელი და საგარანიტიო თანხების შესახებ.',
-          'In live mode, we can programmatically see which car is finished and which one is in the process of repair. Also, to get information about refundable and guarantee funds.',
+          'We can easily see which cars are finished and which are still being repaired, in live mode. We can also access information about refundable and warranty funds.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo2.svg',
@@ -183,7 +172,7 @@ export class DataService {
         Title: ['პროცესების კონტროლი', 'Prcess Control'],
         Desc: [
           'პროგრამულად ფიქსირდება და აღირიცხება: ტექნიკის მიღება, ბოქსში განაწილება, ოსტატზე მიმაგრება, დეფექტური აქტის შედგენა, ხელოსნის მიერ გაწეული სერვისი და საჭირო ნაწილები და ბოლოს - მიღება-ჩაბარების გაფორმება',
-          'Programmatically fixed and recorded: receipt of equipment, distribution in the box, attachment to the master, drawing up of the defective act, the service provided by the craftsman and the necessary parts, and finally - signing the acceptance-handover',
+          'Program records include: receiving the vehicle, organizing it in the service box, assigning to the technician, creating a defect report, documenting the services provided and parts used, and finally, signing the acceptance and handover.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo2.svg',
@@ -191,13 +180,10 @@ export class DataService {
         picUrl: '../../assets/img/collapse2.jpg',
       },
       {
-        Title: [
-          'ავტოსერვისის პროცესის გაციფრულება',
-          'Digitization of the car service process',
-        ],
+        Title: ['როლებისა და უფლებების მართვა', 'Users & Roles'],
         Desc: [
-          'პროგრამაში ერთიან ციკლში აღირიცხება ავტომობილის რეგისტრაცია, ავტოსერვისის ინიცირება, ავტომობილის დათვალიერება, სერვისის ღირებულების დადგენა, შეკეთების პროცესი და მიღება-ჩაარების გაფორმება.',
-          'In the program, vehicle registration, initiation of car service, inspection of the vehicle, determination of the service cost, repair process and acceptance-handover registration are recorded in a single cycle.',
+          'სისტემაში შესაძლებელია პროგრამის მომხმარებლებისთვის როლების მინიჭება მათი უფლება-მოვალეობების მიხედვით და თითიოეულ როლზე წინასწარ განსაზღვრული უფლებების მინიჭება.',
+          'The system allows you to assign roles to users based on their rights and responsibilities, with predefined rights for each role.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo3.svg',
@@ -208,7 +194,7 @@ export class DataService {
         Title: ['ოსტატების მენეჯმენტი', 'Master Management'],
         Desc: [
           'ავტოსერვისის დავალებას ემაგრება ოსტატი - ხოლო დავალების დასრულებისას პროგრამაშივე შესაძლებელია დავალებაზე დახარჯული დროის აღრიცხვა. რეპორტებში კი ვხედავთ თითოეული ოსტატის მიერ დახარჯულ ჯამურ საათებს, ხოლო ასანაზღაურებელ თანხას პროგრამა ავტომატურად გვითვლის.',
-          'A wizard is attached to the auto service task - and when the task is completed, the time spent on the task can be recorded in the program itself. In the reports, we can see the total hours spent by each master, and the program automatically calculates the amount to be reimbursed.',
+          'A dedicated master(s) are linked to service tasks, allowing management to record the time spent on each task once its completed. Reports show the total hours worked by each master and the program automatically calculates the compensation amount.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo4.svg',
@@ -219,7 +205,7 @@ export class DataService {
         Title: ['მარაგების კონტროლი', 'Inventory Control'],
         Desc: [
           'საბუღალტრო სისტემებთან ინტეგრაცია გვაძლევს სრულ ხედვას საწყობებზე არსებულ ნაშთებზე და საშუალებას გვაძლევს ავტოსერვისის გაწევისას გამოყენებული ნაწილები და სახარჯი მასალები ავტომატურად მარაგებიდან.',
-          'The integration with the accounting systems gives us a complete view of the balances in the warehouses and allows us to automatically draw the parts and consumables used in the car service from the stocks.',
+          'Integration with accounting systems ensures a complete view of warehouse balances and allows for automatic tracking of parts and supplies used in the car service.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/law.png',

@@ -1,46 +1,5 @@
 <header class="header">
   <h1 class="header-title">{{ langs.title[index] }}</h1>
 
-  <!-- <div>ამ ღილაკს დაეიჭრა {{ clicked }} ჯერ</div>
-  <div>
-    <input type="number" [(ngModel)]="clicked" />
-  </div>
-
-  <div *ngIf="clicked > 3">
-    <p>გეყოფა!</p>
-  </div>
-  <div>
-    <button (click)="clickMe()">დამაჭირე</button>
-  </div> -->
-
-  <!-- <div
-    class="contextBox"
-    [ngClass]="tooltipInfo.willShow ? 'tooltip-color' : ''"
-    (contextmenu)="toggleContextMenu(true, $event)"
-    (mouseenter)="onMouseMove(true, $event)"
-    (mouseleave)="onMouseMove(false, $event)"
-    (mousemove)="onMouseMove(true, $event)"
-  ></div>
-  <div
-    *ngIf="contextMenuInfo.willShow"
-    class="contextMenu"
-    [style.left.px]="contextMenuInfo.pageX"
-    [style.top.px]="contextMenuInfo.pageY"
-    (click)="contextClick()"
-  >
-    Hello, its context
-  </div>
-
-  <div
-    *ngIf="tooltipInfo.willShow"
-    class="toolTipMenu"
-    [style.left.px]="tooltipInfo.pageX - 15"
-    [style.top.px]="tooltipInfo.pageY + 50"
-  >
-    Hello, its mouseenter
-  </div> -->
-
-  <p class="header-desc">{{ langs.titleSub[index] }}</p>
-
   <app-header-carousel />
 </header>
