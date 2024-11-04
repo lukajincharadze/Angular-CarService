@@ -103,50 +103,50 @@ export class DataService {
     return [
       {
         img: '../../assets/img/webapp2.png',
-        title: ['სისტემა', 'System'],
+        title: ['მართვა', 'Manage'],
         text: [
-          'დიჯიტარიუსი ვებ-სისტემაა, მისი გამოყენებისთვის მხოლოდ ინტერნეტი დაგჭირდება',
-          'Archivarius is a web system, you only need an internet connection to use it',
+          'სისტემაში შესაძლებელია პროგრამის მომხმარებლებისთვის როლების მინიჭება მათი უფლება-მოვალეობების მიხედვით და თითიოეულ როლზე  წინასწარ განსაზღვრული უფლებების მინიჭება.',
+          'In the system, it is possible to assign roles to the users of the program according to their rights and duties and to assign predetermined rights to each role.',
         ],
       },
       {
         img: '../../assets/img/adIntegration.png',
         title: ['ინტეგრაცია', 'Integration'],
         text: [
-          'პროგრამას მარტივად დააკავშირებ კომპანიის Active Directory-სთან და მარტივად შეძლებ თანამშრომლების სისტემაში ჩართვას',
-          "You can easily integrate the program with the company's already existing Active Directory and easily add all the employees to the system",
+          'პროგრამის მოხმარებლების ავტორიზაციის პროცესის დაკავშირება შესაძლებელია აქტიურ დირექტორიასთან (AD)',
+          'Application user authentication process can be linked to Active Directory (AD)',
         ],
       },
       {
         img: '../../assets/img/mobileInterface.png',
-        title: ['ინტერფეისი', 'Interface'],
+        title: ['აღრიცხვა', 'Accounting'],
         text: [
-          'პროგრამას Desktop ვერსიასთან ერთად აქვს Mobile Interface-ი, რაც ლოჯისტიკის მენეჯერებს, კურიერებს და არქივის ოპერატორებს smartphone-ით მუშაობის შესაძლებლობას აძლევს',
-          'Along with the desktop version, the program features a mobile interface, enabling logistics managers, couriers, and archive operators to work from their smartphones',
+          'პროგრამაში გაციფრულებულია ყველანაირი საგარანტიო პირობა, როგორც შიდა ისე მომწოდებლის განარტიის შემთხვევაში.',
+          "All warranty conditions are digitized in the program, both in case of internal and supplier's warranty.",
         ],
       },
       {
         img: '../../assets/img/devices03.png',
-        title: ['გამოყენება', 'Usage'],
+        title: ['ინტეგრაცია', 'Integration'],
         text: [
-          'დიჯიტარიუსთან მარტივად დააკავშირებ როგორც ლაზერულ, ისე ხელის სკანერს. ხოლო smartphone-ზე სამუშაოდ ტელეფონის კამერას გამოიყენებ',
-          'Digitarius supports connections with both laser and handheld scanners, and for smartphone use, you can use the phone’s camera',
+          'პროგრამა ინტეგრირდება საბურალტრო და ERP სისტემებთან, რაც იძლევა მონაცემების ლაივ რეჟიმში გაცვლის შესაძლებლობას',
+          'The program integrates with inventory and ERP systems, which provides the opportunity to exchange data in live mode',
         ],
       },
       {
         img: '../../assets/img/mobileInterface.png',
-        title: ['ინტერფეისი', 'Interface'],
+        title: ['დაჯავშვნა', 'Book'],
         text: [
-          'პროგრამას Desktop ვერსიასთან ერთად აქვს Mobile Interface-ი, რაც ლოჯისტიკის მენეჯერებს, კურიერებს და არქივის ოპერატორებს smartphone-ით მუშაობის შესაძლებლობას აძლევს',
-          'Along with the desktop version, the program features a mobile interface, enabling logistics managers, couriers, and archive operators to work from their smartphones',
+          'პროგრამაში შესაძლებელია ავტოსერვისზე წინასწარ ჩაწერა: ავტო-ტექნიკის როგორც სერვის ცენტრში მიყვანი, ისე ოსტატის ადგილზე მივნილების შემთხვევაში.',
+          'In the program, it is possible to register for a car service in advance: in the case of bringing the vehicle to the service center, or in the case of a business trip to the masters place.',
         ],
       },
       {
         img: '../../assets/img/adIntegration.png',
-        title: ['ინტეგრაცია', 'Integration'],
+        title: ['ციფრული', 'Digital'],
         text: [
-          'პროგრამას მარტივად დააკავშირებ კომპანიის Active Directory-სთან და მარტივად შეძლებ თანამშრომლების სისტემაში ჩართვას',
-          "You can easily integrate the program with the company's already existing Active Directory and easily add all the employees to the system",
+          'პროგრამაში გაციფრულებულია ავტოსერვისთან დაკავშირებული ყველანაირი დოკუმენტი: პრეისკურანტი, ავტოსერვისის ხარჯთაღრიცხვა, მიღება-ჩაბარებები და ინვოისები.',
+          'All documents related to car service are digitized in the program: price list, car service cost estimate, receipts and invoices.',
         ],
       },
     ];
@@ -157,8 +157,8 @@ export class DataService {
       {
         Title: ['ციფრული პრეისკურანტი', 'Digital price list'],
         Desc: [
-          'სისტემა აღრიცხავს დოკუმენტების ნომერს, ტიპს, თარიღსა და წარმოქმნის სერვის-ცენტრს',
-          'System registers the document number, type, date and the service center where it came from.',
+          'გაციფრულებულია კომპანიებთან სატენდერო ხელშეკრულებები და პრეისკურანტი. მის  მიხედვით აღირიცხება სატენდერო ვადის განმავლობაში სერვისის გაწევისას ნაწილების, შეკეთებისა და სახარჯი მასალების ფასები ',
+          'Tender contracts and price lists with companies have been digitized. According to it, the prices of parts, repairs and consumables during the service provision during the tender period are recorded.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo1.svg',
@@ -171,8 +171,8 @@ export class DataService {
           'Complete information about cars',
         ],
         Desc: [
-          'დავალება ციფრულად ემაგრება კურიერს, მოდის არქივში წინასწარ გამზადებულ სივრცეში, მოწმდება და თავსდება არქივის შესაბამის ლოკაციაზე - სრული პროცესი ციფრულად აისახება პროგრამაში',
-          'Delivery task is digitally assigned to the courier, documents are transported to a designated archival space, verified, and properly filed. This entire workflow is documented within the program',
+          'ლაივ რეჟიმში შეგვიძლია პროგრამულად ვნახოთ რომელი ავტომობილია დასრულებული და რომელი იმყოფება შეკეთების პროცესში. ასევე, მივიღოთ ინფორმაცია ასანაზღაურებელი და საგარანიტიო თანხების შესახებ.',
+          'In live mode, we can programmatically see which car is finished and which one is in the process of repair. Also, to get information about refundable and guarantee funds.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo2.svg',
@@ -182,8 +182,8 @@ export class DataService {
       {
         Title: ['პროცესების კონტროლი', 'Prcess Control'],
         Desc: [
-          'დიჯიტარიუსი აღწერს ფიზიკური არქივის ყველანაირ სპეციფიკაციას - თაროებს, დარბაზებს და ა.შ.  ხოლო თითოეული ყუთის უნიკალური შტრიხკოდი იძლევა ინფორმაციას არქივში მისი ლოკაციის შესახებ',
-          'Digitarius details all aspects of the physical archive, such as shelves and halls. Each box’s unique barcode provides its specific location within the archive.',
+          'პროგრამულად ფიქსირდება და აღირიცხება: ტექნიკის მიღება, ბოქსში განაწილება, ოსტატზე მიმაგრება, დეფექტური აქტის შედგენა, ხელოსნის მიერ გაწეული სერვისი და საჭირო ნაწილები და ბოლოს - მიღება-ჩაბარების გაფორმება',
+          'Programmatically fixed and recorded: receipt of equipment, distribution in the box, attachment to the master, drawing up of the defective act, the service provided by the craftsman and the necessary parts, and finally - signing the acceptance-handover',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo2.svg',
@@ -196,8 +196,8 @@ export class DataService {
           'Digitization of the car service process',
         ],
         Desc: [
-          'სისტემურად ფიქსირდება თითოეული ინვენტარიზაციის დეტალები და თარიღი',
-          'The details and date of each inventory are systematically recorded',
+          'პროგრამაში ერთიან ციკლში აღირიცხება ავტომობილის რეგისტრაცია, ავტოსერვისის ინიცირება, ავტომობილის დათვალიერება, სერვისის ღირებულების დადგენა, შეკეთების პროცესი და მიღება-ჩაარების გაფორმება.',
+          'In the program, vehicle registration, initiation of car service, inspection of the vehicle, determination of the service cost, repair process and acceptance-handover registration are recorded in a single cycle.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo3.svg',
@@ -207,8 +207,8 @@ export class DataService {
       {
         Title: ['ოსტატების მენეჯმენტი', 'Master Management'],
         Desc: [
-          'სისტემურად შესაძლებელია მოიძებნოს თითოეული ყუთი, პაკეტი და მასში შემავალი დოკუმენტები. ასევე, ინფორმაცია თუ როდის შემოვიდა არქივში ესა თუ ის დოკუმენტი',
-          'Each box, package, and document can be searched within the system, which also tracks when each item was added to the archive',
+          'ავტოსერვისის დავალებას ემაგრება ოსტატი - ხოლო დავალების დასრულებისას პროგრამაშივე შესაძლებელია დავალებაზე დახარჯული დროის აღრიცხვა. რეპორტებში კი ვხედავთ თითოეული ოსტატის მიერ დახარჯულ ჯამურ საათებს, ხოლო ასანაზღაურებელ თანხას პროგრამა ავტომატურად გვითვლის.',
+          'A wizard is attached to the auto service task - and when the task is completed, the time spent on the task can be recorded in the program itself. In the reports, we can see the total hours spent by each master, and the program automatically calculates the amount to be reimbursed.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/collapseLogo4.svg',
@@ -218,8 +218,8 @@ export class DataService {
       {
         Title: ['მარაგების კონტროლი', 'Inventory Control'],
         Desc: [
-          'დიჯიტარიუსი სრულად მოერგება შენი ორგანიზაციის სტრუქტურას - სისტემაში შესაძლებელია ნებისმიერი ტიპის როლის დამატება და მისთვის შესაბამისი უფლებებისა და შეზღუდვების მინიჭება',
-          'Digitarius fully adapts to your organization’s structure, allowing you to add any role and assign specific rights and restrictions accordingly',
+          'საბუღალტრო სისტემებთან ინტეგრაცია გვაძლევს სრულ ხედვას საწყობებზე არსებულ ნაშთებზე და საშუალებას გვაძლევს ავტოსერვისის გაწევისას გამოყენებული ნაწილები და სახარჯი მასალები ავტომატურად მარაგებიდან.',
+          'The integration with the accounting systems gives us a complete view of the balances in the warehouses and allows us to automatically draw the parts and consumables used in the car service from the stocks.',
         ],
         learnMore: ['გაიგე მეტი', 'Learn more'],
         imgUrl: '../../assets/img/law.png',
