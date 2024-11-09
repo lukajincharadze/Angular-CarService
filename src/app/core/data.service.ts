@@ -99,7 +99,7 @@ export class DataService {
   useCaseInfo() {
     return [
       {
-        img: '../../assets/img/adIntegration.png',
+        img: '../../assets/img/sec4Imgs/adIntegration.png',
         title: ['ინტეგრაცია', 'Integration'],
         text: [
           'პროგრამის მოხმარებლების ავტორიზაციის პროცესის დაკავშირება შესაძლებელია აქტიურ დირექტორიასთან (AD)',
@@ -107,7 +107,7 @@ export class DataService {
         ],
       },
       {
-        img: '../../assets/img/mobileInterface.png',
+        img: '../../assets/img/sec4Imgs/mobileInterface.png',
         title: ['აღრიცხვა', 'Accounting'],
         text: [
           'პროგრამაში გაციფრულებულია ყველანაირი საგარანტიო პირობა, როგორც შიდა ისე მომწოდებლის განარტიის შემთხვევაში.',
@@ -115,7 +115,7 @@ export class DataService {
         ],
       },
       {
-        img: '../../assets/img/devices03.png',
+        img: '../../assets/img/sec4Imgs/devices03.png.png',
         title: ['ინტეგრაცია', 'Integration'],
         text: [
           'პროგრამა ინტეგრირდება საბუღალტრო და ERP სისტემებთან, რაც იძლევა მონაცემების ლაივ რეჟიმში გაცვლის შესაძლებლობას',
@@ -123,7 +123,7 @@ export class DataService {
         ],
       },
       {
-        img: '../../assets/img/mobileInterface.png',
+        img: '../../assets/img/sec4Imgs/masterService.png',
         title: ['დაჯავშვნა', 'Book'],
         text: [
           'პროგრამაში შესაძლებელია ავტოსერვისზე წინასწარ ჩაწერა: ავტო-ტექნიკის როგორც სერვის ცენტრში მიყვანის, ისე ოსტატის ადგილზე მივნილების შემთხვევაში.',
@@ -131,7 +131,7 @@ export class DataService {
         ],
       },
       {
-        img: '../../assets/img/adIntegration.png',
+        img: '../../assets/img/sec4Imgs/digitalService.png',
         title: ['ციფრული', 'Digital'],
         text: [
           'პროგრამაში გაციფრულებულია ავტოსერვისთან დაკავშირებული ყველანაირი დოკუმენტი: პრეისკურანტი, ავტოსერვისის ხარჯთაღრიცხვა, მიღება-ჩაბარებები და ინვოისები.',
